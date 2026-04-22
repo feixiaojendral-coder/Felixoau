@@ -60,6 +60,13 @@ body.is-intro-active .page-shell {
   pointer-events: none;
 }
 
+body.is-intro-unsealing .page-shell {
+  opacity: 0.42;
+  transform: scale(1.015);
+  filter: blur(9px);
+  pointer-events: none;
+}
+
 body.is-intro-ending .page-shell,
 body.is-intro-complete .page-shell {
   opacity: 1;
@@ -133,9 +140,9 @@ button {
   grid-template-columns: 148px minmax(0, 1fr);
   min-height: 100vh;
   transition:
-    opacity 2.3s var(--ease-out),
-    transform 2.5s var(--ease-out),
-    filter 2.5s var(--ease-out);
+    opacity 2.6s var(--ease-out),
+    transform 2.8s var(--ease-out),
+    filter 2.8s var(--ease-out);
 }
 
 .intro-screen {
@@ -145,6 +152,7 @@ button {
   display: grid;
   place-items: center;
   overflow: hidden;
+  perspective: 1800px;
   background: transparent;
   transition:
     opacity 2.2s var(--ease-out),
@@ -191,8 +199,10 @@ button {
     inset 0 0 0 1px rgba(173, 131, 56, 0.06),
     inset 0 0 90px rgba(255, 255, 255, 0.16);
   transition:
-    transform 2.7s cubic-bezier(0.2, 1, 0.22, 1),
-    opacity 2s var(--ease-out);
+    transform 2.6s cubic-bezier(0.2, 1, 0.22, 1),
+    opacity 2.1s var(--ease-out),
+    filter 2.1s var(--ease-out);
+  will-change: transform, opacity;
 }
 
 .intro-screen__shutter::before,
@@ -224,11 +234,13 @@ button {
 .intro-screen__shutter--left {
   left: 0;
   border-right: 1px solid rgba(173, 131, 56, 0.12);
+  transform-origin: left center;
 }
 
 .intro-screen__shutter--right {
   right: 0;
   border-left: 1px solid rgba(173, 131, 56, 0.12);
+  transform-origin: right center;
 }
 
 .intro-screen__seam {
@@ -248,7 +260,28 @@ button {
 }
 
 body.is-intro-ending .intro-screen {
-  transform: scale(1.01);
+  transform: scale(1.015);
+}
+
+body.is-intro-ready .intro-screen__meter {
+  box-shadow:
+    inset 0 1px 8px rgba(105, 77, 31, 0.26),
+    0 0 0 8px rgba(205, 170, 99, 0.1);
+}
+
+body.is-intro-ready .intro-screen__meter-fill {
+  animation: intro-meter-pulse 0.9s ease-in-out infinite;
+}
+
+body.is-intro-unsealing .intro-screen__content {
+  transform: translateY(-8px) scale(1.012);
+}
+
+body.is-intro-unsealing .intro-screen__seam {
+  box-shadow:
+    0 0 28px rgba(205, 170, 99, 0.62),
+    0 0 70px rgba(255, 247, 226, 0.74);
+  transform: translateX(-50%) scaleY(1.12);
 }
 
 body.is-intro-ending .intro-screen::before,
@@ -258,11 +291,13 @@ body.is-intro-ending .intro-screen::after {
 }
 
 body.is-intro-ending .intro-screen__shutter--left {
-  transform: translateX(-104%);
+  transform: translateX(-104%) rotateY(-16deg) skewY(-1deg);
+  filter: brightness(1.06);
 }
 
 body.is-intro-ending .intro-screen__shutter--right {
-  transform: translateX(104%);
+  transform: translateX(104%) rotateY(16deg) skewY(1deg);
+  filter: brightness(1.06);
 }
 
 body.is-intro-ending .intro-screen__content {
@@ -2205,6 +2240,18 @@ body.is-intro-ending .intro-screen__ring {
   }
 }
 
+@keyframes intro-meter-pulse {
+  0%,
+  100% {
+    filter: brightness(1);
+    box-shadow: 0 0 16px rgba(200, 155, 79, 0.42);
+  }
+  50% {
+    filter: brightness(1.2);
+    box-shadow: 0 0 26px rgba(200, 155, 79, 0.72);
+  }
+}
+
 @keyframes hero-float {
   0%,
   100% {
@@ -2644,16 +2691,12 @@ body.is-intro-ending .intro-screen__ring {
     scroll-behavior: auto;
   }
 
-  .intro-screen {
-    transition-duration: 0.01ms !important;
-  }
-
   *,
   *::before,
   *::after {
-    animation-duration: 0.01ms !important;
+    animation-duration: 0.22s !important;
     animation-iteration-count: 1 !important;
-    transition-duration: 0.01ms !important;
+    transition-duration: 0.22s !important;
     scroll-behavior: auto !important;
   }
 

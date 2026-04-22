@@ -55,7 +55,9 @@
   };
 
   var INTRO_LOADING_MS = 4000;
-  var INTRO_EXIT_MS = 1700;
+  var INTRO_HOLD_MS = 520;
+  var INTRO_UNSEAL_MS = 700;
+  var INTRO_EXIT_MS = 2600;
 
   function escapeHtml(value) {
     return String(value)
@@ -816,7 +818,12 @@
   }
 
   function completeIntro() {
-    document.body.classList.remove("is-intro-active", "is-intro-ending");
+    document.body.classList.remove(
+      "is-intro-active",
+      "is-intro-ready",
+      "is-intro-unsealing",
+      "is-intro-ending"
+    );
     document.body.classList.add("is-intro-complete");
 
     if (refs.introScreen) {
@@ -840,10 +847,13 @@
       return;
     }
 
+    document.body.classList.remove("is-intro-complete", "is-intro-ready", "is-intro-unsealing", "is-intro-ending");
+    document.body.classList.add("is-intro-active");
     setIntroProgress(1);
 
     var introStartedAt = 0;
     var hasExited = false;
+    var hasReachedLoad = false;
 
     function beginExit() {
       if (hasExited) {
@@ -853,6 +863,21 @@
       hasExited = true;
       document.body.classList.add("is-intro-ending");
       window.setTimeout(completeIntro, INTRO_EXIT_MS);
+    }
+
+    function beginUnseal() {
+      if (hasReachedLoad) {
+        return;
+      }
+
+      hasReachedLoad = true;
+      setIntroProgress(100);
+      document.body.classList.add("is-intro-ready");
+
+      window.setTimeout(function () {
+        document.body.classList.add("is-intro-unsealing");
+        window.setTimeout(beginExit, INTRO_UNSEAL_MS);
+      }, INTRO_HOLD_MS);
     }
 
     function tick(timestamp) {
@@ -867,7 +892,7 @@
       setIntroProgress(percent);
 
       if (ratio >= 1) {
-        beginExit();
+        beginUnseal();
         return;
       }
 
