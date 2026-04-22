@@ -135,6 +135,7 @@
 
   function renderHero() {
     var site = data.site;
+    var portrait = site.heroPortrait || {};
     var titleMarkup = Array.isArray(site.heroTitleLines)
       ? site.heroTitleLines
           .map(function (line) {
@@ -189,6 +190,20 @@
       '<p class="hero__description" data-reveal="top">' + escapeHtml(site.heroDescription) + "</p>" +
       '<div class="hero__divider" data-reveal="top"><span></span><span></span><span></span></div>' +
       '<div class="hero__actions" data-reveal="top">' + actions + "</div>" +
+      "</div>" +
+      '<div class="hero__portrait-wrap" data-reveal="right">' +
+      '<div class="hero__portrait-stage">' +
+      '<span class="hero__portrait-ornament hero__portrait-ornament--one" aria-hidden="true"></span>' +
+      '<span class="hero__portrait-ornament hero__portrait-ornament--two" aria-hidden="true"></span>' +
+      '<span class="hero__portrait-ornament hero__portrait-ornament--three" aria-hidden="true"></span>' +
+      '<span class="hero__portrait-glow" aria-hidden="true"></span>' +
+      '<span class="hero__portrait-shadow" aria-hidden="true"></span>' +
+      '<img class="hero__portrait-image" src="' +
+      escapeHtml(portrait.image || "assets/kenzo-teacher.png") +
+      '" alt="' +
+      escapeHtml(portrait.alt || "Foto profil Kenzo Elvano") +
+      '">' +
+      "</div>" +
       "</div>" +
       "</div>" +
       "</div>";

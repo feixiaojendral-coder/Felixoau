@@ -2,16 +2,20 @@ window.PORTFOLIO_DATA = {
   site: {
     title: "E-Portfolio PPG 2026",
     shortTitle: "PPG 2026",
-    ownerName: "Nadia Rahmawati, S.Pd.",
+    ownerName: "Kenzo Elvano",
     role: "Calon Guru Profesional",
     badge: "Ruang Portofolio Belajar",
     cohort: "Angkatan PPG 2026",
     institution: "Program Pendidikan Profesi Guru",
     location: "Indonesia",
     heroEyebrow: "E Portofolio PPG Prajabatan 2026",
-    heroTitleLines: ["Satriya", "Nugraha"],
+    heroTitleLines: ["Kenzo", "Elvano"],
     heroLead: "NIM: 280321470",
     heroDescription: "Dari Pembelajaran Menjadi Pendidik: Perjalanan Menuju Guru Profesional",
+    heroPortrait: {
+      image: "assets/kenzo-teacher.png",
+      alt: "Foto profil Kenzo Elvano"
+    },
     highlightPills: [
       "Pedagogik yang berpihak pada murid",
       "Dokumentasi praktik berbasis bukti",
@@ -34,7 +38,7 @@ window.PORTFOLIO_DATA = {
     ctas: [
       {
         label: "Instagram",
-        target: "https://www.instagram.com/_satriyanugraha/",
+        target: "https://www.instagram.com/kenzoelvano/",
         variant: "solid",
         icon: "instagram"
       },
@@ -106,7 +110,7 @@ window.PORTFOLIO_DATA = {
   profile: {
     eyebrow: "Profil Profesional",
     title: "Identitas pembelajar yang bertumbuh dari kelas, komunitas, dan pengalaman reflektif.",
-    name: "Nadia Rahmawati, S.Pd.",
+    name: "Kenzo Elvano",
     role: "Peserta Pendidikan Profesi Guru 2026",
     greeting: "Portfolio ini merepresentasikan ikhtiar menjadi guru yang tidak hanya menyampaikan materi, tetapi juga merancang pengalaman belajar yang aman, menantang, dan bermakna.",
     intro: "Saya memandang profesi guru sebagai panggilan untuk terus belajar. Setiap rancangan ajar, asesmen, dan interaksi dengan murid menjadi ruang untuk memperkuat kompetensi pedagogik, sosial, profesional, dan kepribadian secara utuh.",
@@ -357,7 +361,7 @@ window.PORTFOLIO_DATA = {
     items: [
       {
         label: "Nama Portofolio",
-        value: "Nadia Rahmawati, S.Pd.",
+        value: "Kenzo Elvano",
         link: "#hero"
       },
       {
