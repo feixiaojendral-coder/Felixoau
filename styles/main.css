@@ -542,6 +542,10 @@ body.is-intro-ending .intro-screen__ring {
   max-width: 96px;
 }
 
+.site-nav__line1:empty {
+  display: none;
+}
+
 .site-nav__brand-copy strong {
   font-family: var(--font-display);
   font-size: 1rem;
@@ -2434,6 +2438,10 @@ body.is-intro-ending .intro-screen__ring {
     font-size: 0.66rem;
     letter-spacing: 0.08em;
     text-transform: none;
+  }
+
+  .mobile-topbar__brand-copy span:empty {
+    display: none;
   }
 
   .mobile-topbar__brand-copy strong {

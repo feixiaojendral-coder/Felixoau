@@ -265,7 +265,7 @@
       '<div class="profile-layout">' +
       '<article class="profile-card" data-reveal="left">' +
       '<div class="profile-card__head">' +
-      '<img class="profile-card__mark" src="assets/logo-ust-statuta.png" alt="Logo UST Sarnjawiyata Tamansiswa">' +
+      '<img class="profile-card__mark" src="assets/logo-ppg.png" alt="Logo PPG">' +
       "<div>" +
       '<p class="profile-card__role">' + escapeHtml(profile.role) + "</p>" +
       "<h3>" + escapeHtml(profile.name) + "</h3>" +
@@ -506,9 +506,9 @@
   }
 
   function renderAllSections() {
-    refs.brandLine1.textContent = "Universitas Sarjanawiyata Tamansiswa";
+    refs.brandLine1.textContent = "";
     refs.brandMini.textContent = data.site.shortTitle;
-    refs.mobileBrandLine1.textContent = "Universitas Sarjanawiyata Tamansiswa";
+    refs.mobileBrandLine1.textContent = "";
     refs.mobileBrand.textContent = data.site.shortTitle;
     refs.yearStamp.textContent = "PPG 2026";
     refs.desktopNav.innerHTML = buildNavMarkup();
