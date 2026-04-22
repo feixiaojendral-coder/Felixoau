@@ -1,0 +1,15 @@
+<svg width="1200" height="900" viewBox="0 0 1200 900" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <rect width="1200" height="900" rx="48" fill="#10161E"/>
+  <rect x="26" y="26" width="1148" height="848" rx="28" stroke="#CDAA63" stroke-opacity="0.35" stroke-width="2"/>
+  <circle cx="826" cy="306" r="216" fill="#202D3D"/>
+  <rect x="142" y="146" width="450" height="602" rx="34" fill="#17202B"/>
+  <rect x="190" y="200" width="354" height="86" rx="26" fill="#243445"/>
+  <rect x="190" y="334" width="354" height="18" rx="9" fill="#D7B16A"/>
+  <rect x="190" y="378" width="286" height="12" rx="6" fill="#8FA0B1"/>
+  <rect x="190" y="410" width="310" height="12" rx="6" fill="#8FA0B1"/>
+  <rect x="190" y="488" width="354" height="164" rx="26" fill="#243445"/>
+  <path d="M774 262C820 238 872 238 918 262C964 286 988 336 988 388C988 440 964 490 918 514C872 538 820 538 774 514C728 490 704 440 704 388C704 336 728 286 774 262Z" stroke="#F3E5C9" stroke-width="18"/>
+  <path d="M792 380L842 430L918 344" stroke="#D7B16A" stroke-width="24" stroke-linecap="round" stroke-linejoin="round"/>
+  <text x="626" y="712" fill="#F8EBCF" font-size="84" font-family="Georgia, serif">Refleksi</text>
+  <text x="630" y="774" fill="#D7B16A" font-size="30" font-family="Georgia, serif">Membaca praktik untuk menata langkah berikutnya</text>
+</svg>

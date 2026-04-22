@@ -1,0 +1,24 @@
+<svg width="1200" height="900" viewBox="0 0 1200 900" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <rect width="1200" height="900" rx="48" fill="#0F151D"/>
+  <rect x="26" y="26" width="1148" height="848" rx="28" stroke="#CDAA63" stroke-opacity="0.35" stroke-width="2"/>
+  <rect x="102" y="132" width="432" height="580" rx="32" fill="#151E29"/>
+  <rect x="142" y="180" width="244" height="22" rx="11" fill="#F8EBCF"/>
+  <rect x="142" y="240" width="352" height="74" rx="20" fill="#243446"/>
+  <rect x="168" y="268" width="112" height="18" rx="9" fill="#D1AF6C"/>
+  <rect x="300" y="264" width="144" height="10" rx="5" fill="#8F9EAE"/>
+  <rect x="300" y="286" width="124" height="10" rx="5" fill="#8F9EAE"/>
+  <rect x="142" y="338" width="352" height="74" rx="20" fill="#243446"/>
+  <rect x="168" y="366" width="112" height="18" rx="9" fill="#D1AF6C"/>
+  <rect x="300" y="362" width="144" height="10" rx="5" fill="#8F9EAE"/>
+  <rect x="300" y="384" width="124" height="10" rx="5" fill="#8F9EAE"/>
+  <rect x="142" y="436" width="352" height="74" rx="20" fill="#243446"/>
+  <rect x="168" y="464" width="112" height="18" rx="9" fill="#D1AF6C"/>
+  <rect x="300" y="460" width="144" height="10" rx="5" fill="#8F9EAE"/>
+  <rect x="300" y="482" width="124" height="10" rx="5" fill="#8F9EAE"/>
+  <path d="M664 610C741 553 805 518 870 510C935 502 1004 524 1096 592" stroke="#D5B56F" stroke-opacity="0.25" stroke-width="2"/>
+  <circle cx="924" cy="274" r="176" fill="#223041"/>
+  <path d="M856 274L900 318L996 222" stroke="#F8EBCF" stroke-width="28" stroke-linecap="round" stroke-linejoin="round"/>
+  <text x="614" y="644" fill="#F8EBCF" font-size="84" font-family="Georgia, serif">Asesmen</text>
+  <text x="618" y="706" fill="#D1AF6C" font-size="30" font-family="Georgia, serif">Membaca kemajuan untuk menentukan tindak lanjut</text>
+  <text x="618" y="762" fill="#D4DBE3" font-size="28" font-family="Georgia, serif">Diagnostik awal dan formatif yang sederhana namun tajam</text>
+</svg>

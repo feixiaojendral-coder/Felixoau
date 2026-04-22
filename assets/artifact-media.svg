@@ -1,0 +1,23 @@
+<svg width="1200" height="900" viewBox="0 0 1200 900" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <rect width="1200" height="900" rx="48" fill="#121922"/>
+  <rect x="26" y="26" width="1148" height="848" rx="28" stroke="#CDAA63" stroke-opacity="0.35" stroke-width="2"/>
+  <path d="M95 690C228 593 394 525 566 529C694 533 839 595 1105 744" stroke="#D9B875" stroke-opacity="0.18" stroke-width="2"/>
+  <rect x="88" y="116" width="522" height="508" rx="30" fill="url(#paint0_linear)"/>
+  <rect x="132" y="164" width="434" height="274" rx="22" fill="#EDF0F4"/>
+  <circle cx="248" cy="264" r="68" fill="#CDAA63"/>
+  <path d="M328 372L410 290L480 348L566 240V438H132V372H328Z" fill="#273647"/>
+  <rect x="132" y="478" width="176" height="18" rx="9" fill="#F8EBCF"/>
+  <rect x="132" y="522" width="310" height="12" rx="6" fill="#9BA9B8"/>
+  <rect x="132" y="554" width="254" height="12" rx="6" fill="#9BA9B8"/>
+  <circle cx="876" cy="296" r="188" fill="#202B3A"/>
+  <circle cx="876" cy="296" r="134" stroke="#D9B875" stroke-opacity="0.28" stroke-width="2"/>
+  <text x="642" y="606" fill="#F8EBCF" font-size="84" font-family="Georgia, serif">Media Interaktif</text>
+  <text x="646" y="668" fill="#D9B875" font-size="30" font-family="Georgia, serif">Visual, aktivitas, dan konteks belajar</text>
+  <text x="646" y="724" fill="#D4DBE3" font-size="28" font-family="Georgia, serif">Membantu murid memahami konsep dengan lebih dekat</text>
+  <defs>
+    <linearGradient id="paint0_linear" x1="349" y1="116" x2="349" y2="624" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#1F2D40"/>
+      <stop offset="1" stop-color="#18212D"/>
+    </linearGradient>
+  </defs>
+</svg>

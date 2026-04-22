@@ -1,0 +1,14 @@
+<svg width="1200" height="900" viewBox="0 0 1200 900" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <rect width="1200" height="900" rx="48" fill="#11161F"/>
+  <rect x="26" y="26" width="1148" height="848" rx="28" stroke="#CDAA63" stroke-opacity="0.35" stroke-width="2"/>
+  <circle cx="260" cy="292" r="172" fill="#243345"/>
+  <circle cx="918" cy="292" r="172" fill="#243345"/>
+  <rect x="238" y="446" width="722" height="168" rx="34" fill="#1A2430"/>
+  <path d="M362 284C362 330.392 324.392 368 278 368C231.608 368 194 330.392 194 284C194 237.608 231.608 200 278 200C324.392 200 362 237.608 362 284Z" fill="#F2E5C7"/>
+  <path d="M1002 284C1002 330.392 964.392 368 918 368C871.608 368 834 330.392 834 284C834 237.608 871.608 200 918 200C964.392 200 1002 237.608 1002 284Z" fill="#F2E5C7"/>
+  <path d="M446 530H754" stroke="#D7B16A" stroke-width="18" stroke-linecap="round"/>
+  <path d="M500 572H700" stroke="#90A0B0" stroke-width="14" stroke-linecap="round"/>
+  <path d="M554 614H646" stroke="#90A0B0" stroke-width="14" stroke-linecap="round"/>
+  <text x="156" y="760" fill="#F8EBCF" font-size="84" font-family="Georgia, serif">Kolaborasi</text>
+  <text x="160" y="822" fill="#D7B16A" font-size="30" font-family="Georgia, serif">Sekolah, rekan sejawat, dan komunitas belajar</text>
+</svg>

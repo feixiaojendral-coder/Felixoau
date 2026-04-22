@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>E-Portfolio PPG 2026</title>
+  <meta name="description" content="Web lokal E-Portfolio PPG 2026 bergaya cinematic untuk menampilkan perjalanan belajar, karya, aksi nyata, dan refleksi profesional.">
+  <meta name="theme-color" content="#0f141b">
+  <link rel="stylesheet" href="styles/main.css">
+</head>
+<body class="is-intro-active">
+  <div class="intro-screen" id="introScreen" aria-hidden="true">
+    <div class="intro-screen__shutter intro-screen__shutter--left"></div>
+    <div class="intro-screen__shutter intro-screen__shutter--right"></div>
+    <div class="intro-screen__seam" aria-hidden="true"></div>
+    <div class="intro-screen__glow intro-screen__glow--one"></div>
+    <div class="intro-screen__glow intro-screen__glow--two"></div>
+    <div class="intro-screen__ring intro-screen__ring--one"></div>
+    <div class="intro-screen__ring intro-screen__ring--two"></div>
+    <div class="intro-screen__content">
+      <h1 class="intro-screen__title">PPG PRAJABATAN 2026</h1>
+      <div class="intro-screen__line" aria-hidden="true"><span></span><span></span><span></span></div>
+    </div>
+  </div>
+  <div class="page-shell">
+    <aside class="site-nav" aria-label="Navigasi utama">
+      <div class="site-nav__brand">
+        <img class="site-nav__mark" src="assets/logo-ust-statuta.png" alt="Logo UST Sarnjawiyata Tamansiswa">
+        <div class="site-nav__brand-copy">
+          <p class="site-nav__line1" id="brandLine1">Universitas Sarjanawiyata Tamansiswa</p>
+          <strong id="brandMini">PPG 2026</strong>
+        </div>
+      </div>
+      <div class="site-nav__track" aria-hidden="true">
+        <span class="site-nav__progress" id="navProgress"></span>
+      </div>
+      <nav class="site-nav__menu" id="desktopNav"></nav>
+      <p class="site-nav__stamp" id="yearStamp"></p>
+    </aside>
+
+    <header class="mobile-topbar">
+      <a class="mobile-topbar__brand" href="#hero">
+        <img class="mobile-topbar__mark" src="assets/logo-ust-statuta.png" alt="Logo UST Sarnjawiyata Tamansiswa">
+        <span class="mobile-topbar__brand-copy">
+          <span id="mobileBrandLine1">Universitas Sarjanawiyata Tamansiswa</span>
+          <strong id="mobileBrand">PPG 2026</strong>
+        </span>
+      </a>
+      <button class="mobile-topbar__toggle" id="menuToggle" type="button" aria-expanded="false" aria-controls="mobileDrawer">
+        <span></span>
+        <span></span>
+      </button>
+    </header>
+
+    <div class="mobile-drawer" id="mobileDrawer" hidden>
+      <nav class="mobile-drawer__menu" id="mobileNav" aria-label="Navigasi mobile"></nav>
+    </div>
+
+    <main class="experience" id="experience">
+      <section class="panel panel--hero" id="hero" data-section="hero"></section>
+      <section class="panel panel--journey" id="journey" data-section="journey"></section>
+      <section class="panel panel--profile" id="profile" data-section="profile"></section>
+      <section class="panel panel--artifacts" id="artifacts" data-section="artifacts"></section>
+      <section class="panel panel--actions" id="actions" data-section="actions"></section>
+      <section class="panel panel--reflection" id="reflection" data-section="reflection"></section>
+      <section class="panel panel--contact" id="contact" data-section="contact"></section>
+    </main>
+  </div>
+
+  <noscript>
+    <div class="no-script">
+      JavaScript perlu aktif agar konten portfolio dapat dimuat dari data lokal.
+    </div>
+  </noscript>
+
+  <script src="scripts/data.js"></script>
+  <script src="scripts/main.js" defer></script>
+</body>
+</html>

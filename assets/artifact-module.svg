@@ -1,0 +1,27 @@
+<svg width="1200" height="900" viewBox="0 0 1200 900" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <rect width="1200" height="900" rx="48" fill="#10161E"/>
+  <rect x="26" y="26" width="1148" height="848" rx="28" stroke="#CDAA63" stroke-opacity="0.35" stroke-width="2"/>
+  <path d="M0 690C145 600 261 559 420 566C579 573 643 675 812 698C932 714 1046 676 1200 570V900H0V690Z" fill="url(#paint0_linear)"/>
+  <circle cx="955" cy="248" r="188" fill="#223247"/>
+  <circle cx="955" cy="248" r="132" stroke="#D7B16A" stroke-opacity="0.4" stroke-width="2"/>
+  <rect x="116" y="162" width="368" height="470" rx="28" fill="#15202C" stroke="#E9DAB5" stroke-opacity="0.14"/>
+  <rect x="154" y="206" width="292" height="22" rx="11" fill="#F3E5C9"/>
+  <rect x="154" y="252" width="228" height="10" rx="5" fill="#76879B"/>
+  <rect x="154" y="296" width="292" height="150" rx="20" fill="url(#paint1_linear)"/>
+  <rect x="154" y="476" width="184" height="12" rx="6" fill="#CDAA63"/>
+  <rect x="154" y="506" width="246" height="10" rx="5" fill="#90A0B0"/>
+  <rect x="154" y="536" width="212" height="10" rx="5" fill="#90A0B0"/>
+  <text x="602" y="564" fill="#F8EBCF" font-size="88" font-family="Georgia, serif">Modul Ajar</text>
+  <text x="604" y="628" fill="#D7B16A" font-size="30" font-family="Georgia, serif">Rancangan pembelajaran berpihak pada murid</text>
+  <text x="602" y="686" fill="#D2D8E0" font-size="28" font-family="Georgia, serif">Tujuan, aktivitas, asesmen, dan refleksi</text>
+  <defs>
+    <linearGradient id="paint0_linear" x1="600" y1="566" x2="600" y2="900" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#1B2735" stop-opacity="0"/>
+      <stop offset="1" stop-color="#172433"/>
+    </linearGradient>
+    <linearGradient id="paint1_linear" x1="300" y1="296" x2="300" y2="446" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#29405E"/>
+      <stop offset="1" stop-color="#1A2636"/>
+    </linearGradient>
+  </defs>
+</svg>

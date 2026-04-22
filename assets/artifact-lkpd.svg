@@ -1,0 +1,25 @@
+<svg width="1200" height="900" viewBox="0 0 1200 900" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <rect width="1200" height="900" rx="48" fill="#111822"/>
+  <rect x="26" y="26" width="1148" height="848" rx="28" stroke="#CDAA63" stroke-opacity="0.35" stroke-width="2"/>
+  <rect x="88" y="108" width="532" height="654" rx="34" fill="#172231"/>
+  <rect x="132" y="164" width="442" height="56" rx="22" fill="#F8EBCF"/>
+  <rect x="132" y="260" width="442" height="170" rx="26" fill="url(#paint0_linear)"/>
+  <rect x="132" y="468" width="200" height="18" rx="9" fill="#D7B16A"/>
+  <rect x="132" y="512" width="312" height="12" rx="6" fill="#90A0B0"/>
+  <rect x="132" y="544" width="276" height="12" rx="6" fill="#90A0B0"/>
+  <rect x="132" y="604" width="160" height="18" rx="9" fill="#D7B16A"/>
+  <path d="M312 302L360 350L454 256" stroke="#F8EBCF" stroke-width="24" stroke-linecap="round" stroke-linejoin="round"/>
+  <circle cx="918" cy="284" r="182" fill="#223246"/>
+  <path d="M844 226H994V342H844V226Z" stroke="#D7B16A" stroke-width="12"/>
+  <path d="M844 390H994" stroke="#D7B16A" stroke-width="14" stroke-linecap="round"/>
+  <path d="M874 430H964" stroke="#F8EBCF" stroke-width="14" stroke-linecap="round"/>
+  <text x="648" y="636" fill="#F8EBCF" font-size="84" font-family="Georgia, serif">LKPD</text>
+  <text x="652" y="698" fill="#D7B16A" font-size="30" font-family="Georgia, serif">Aktivitas terarah untuk eksplorasi dan kolaborasi</text>
+  <text x="652" y="754" fill="#D4DBE3" font-size="28" font-family="Georgia, serif">Murid belajar sambil membangun produk dan pemahaman</text>
+  <defs>
+    <linearGradient id="paint0_linear" x1="353" y1="260" x2="353" y2="430" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#2B3E59"/>
+      <stop offset="1" stop-color="#1A2636"/>
+    </linearGradient>
+  </defs>
+</svg>
