@@ -32,6 +32,8 @@
 
   var refs = {
     introScreen: document.getElementById("introScreen"),
+    introPercent: document.getElementById("introPercent"),
+    introMeterFill: document.getElementById("introMeterFill"),
     desktopNav: document.getElementById("desktopNav"),
     mobileNav: document.getElementById("mobileNav"),
     navProgress: document.getElementById("navProgress"),
@@ -52,8 +54,8 @@
     contact: document.getElementById("contact")
   };
 
-  var INTRO_VISIBLE_MS = 6500;
-  var INTRO_EXIT_MS = 2600;
+  var INTRO_LOADING_MS = 4000;
+  var INTRO_EXIT_MS = 1700;
 
   function escapeHtml(value) {
     return String(value)
@@ -822,22 +824,57 @@
     }
   }
 
+  function setIntroProgress(percent) {
+    if (refs.introPercent) {
+      refs.introPercent.textContent = String(percent) + "%";
+    }
+
+    if (refs.introMeterFill) {
+      refs.introMeterFill.style.width = String(percent) + "%";
+    }
+  }
+
   function playIntro() {
     if (!refs.introScreen) {
       document.body.classList.add("is-intro-complete");
       return;
     }
 
-    if (mediaQueries.reducedMotion.matches) {
-      window.setTimeout(completeIntro, 120);
-      return;
+    setIntroProgress(1);
+
+    var introStartedAt = 0;
+    var hasExited = false;
+
+    function beginExit() {
+      if (hasExited) {
+        return;
+      }
+
+      hasExited = true;
+      document.body.classList.add("is-intro-ending");
+      window.setTimeout(completeIntro, INTRO_EXIT_MS);
     }
 
-    window.setTimeout(function () {
-      document.body.classList.add("is-intro-ending");
-    }, INTRO_VISIBLE_MS);
+    function tick(timestamp) {
+      if (!introStartedAt) {
+        introStartedAt = timestamp;
+      }
 
-    window.setTimeout(completeIntro, INTRO_VISIBLE_MS + INTRO_EXIT_MS);
+      var elapsed = timestamp - introStartedAt;
+      var ratio = Math.max(0, Math.min(1, elapsed / INTRO_LOADING_MS));
+      var percent = Math.max(1, Math.min(100, Math.round(ratio * 100)));
+
+      setIntroProgress(percent);
+
+      if (ratio >= 1) {
+        beginExit();
+        return;
+      }
+
+      window.requestAnimationFrame(tick);
+    }
+
+    window.requestAnimationFrame(tick);
   }
 
   function init() {
